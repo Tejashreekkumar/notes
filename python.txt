@@ -1,0 +1,549 @@
+| Feature   | Description                                    |
+| --------- | ---------------------------------------------- |
+| Extension | `.py`                                          |
+| Type      | Python Script                                  |
+| Execution | Entire file runs together                      |
+| Best For  | Applications, automation, software development |
+| Output    | Terminal/console                               |
+| Storage   | Plain text                                     |
+
+
+| Feature   | Description                               |
+| --------- | ----------------------------------------- |
+| Extension | `.ipynb`                                  |
+| Type      | Notebook                                  |
+| Execution | Runs cell by cell                         |
+| Best For  | Learning, Data Science, AI, Visualization |
+| Output    | Inline output                             |
+| Storage   | JSON format                               |
+
+Features of python
+1. Simple and Easy to Learn
+
+Python syntax is very easy compared to many languages.
+
+Example
+C Language
+printf("Hello");
+Python
+print("Hello")
+
+Python uses simple English-like statements.
+
+2. Easy to Read and Understand
+
+Python code looks clean and readable.
+
+Example:
+
+age = 18
+
+if age >= 18:
+    print("Eligible to vote")
+
+Indentation makes the code organized.
+
+3. Interpreted Language
+
+Python executes code line by line using an interpreter.
+
+So:
+
+No compilation required
+Easier debugging
+Faster testing
+4. Platform Independent
+
+Python programs can run on:
+
+Windows
+Linux
+macOS
+
+without changing the code.
+
+This is called:
+
+“Write Once, Run Anywhere”
+
+5. Object-Oriented Programming Support
+
+Python supports:
+
+Classes
+Objects
+Inheritance
+Polymorphism
+
+Example:
+
+class Student:
+    def display(self):
+        print("Hello Student")
+6. Large Standard Library
+
+Python provides many built-in modules.
+
+Examples:
+
+Math operations
+File handling
+Date & time
+Web services
+
+Example:
+
+import math
+
+print(math.sqrt(25))
+7. Dynamically Typed Language
+
+No need to declare data types explicitly.
+
+Example:
+
+x = 10
+name = "Python"
+
+Python automatically identifies the datatype.
+
+8. Supports Multiple Programming Paradigms
+
+Python supports:
+
+Procedural Programming
+Object-Oriented Programming
+Functional Programming
+9. Open Source and Free
+
+Python is free to use and open source.
+
+Official website:
+
+Python Official Website
+
+Anyone can download and use it.
+
+10. Huge Community Support
+
+Millions of developers use Python.
+
+If errors occur:
+
+Tutorials
+Forums
+Videos
+Documentation
+
+are easily available online.
+
+11. Extensible Language
+
+Python can be integrated with:
+
+C
+C++
+Java
+
+This improves performance for large applications.
+
+12. Portable Language
+
+Python code can move from one system to another easily.
+
+13. GUI Programming Support
+
+Python supports graphical applications using libraries like:
+
+Tkinter
+PyQt
+
+Example:
+
+Calculator
+Desktop applications
+14. Database Connectivity
+
+Python can connect with databases like:
+
+MySQL
+Oracle
+SQLite
+
+Example applications:
+
+Banking systems
+Student management systems
+15. Powerful for AI and Data Science
+
+Python is widely used in:
+
+Artificial Intelligence
+Machine Learning
+Deep Learning
+Data Analytics
+
+Popular libraries:
+
+NumPy
+Pandas
+TensorFlow
+PyTorch
+
+Used by:
+
+Google
+Netflix
+OpenAI
+16. Web Development Support
+
+Frameworks:
+
+Django
+Flask
+FastAPI
+
+Used for creating:
+
+Websites
+APIs
+Web applications
+17. Automation Capabilities
+
+Python is excellent for:
+
+Task automation
+File handling
+Email automation
+Web scraping
+18. Supports Rapid Application Development
+
+Because Python has:
+
+Simple syntax
+Prebuilt libraries
+Less code
+
+developers can build projects quickly.
+
+Advantages Summary
+Feature	Benefit
+Simple syntax	
+Easy learning
+Interpreted	
+Easy debugging
+Cross-platform	
+Runs everywhere
+Huge libraries	
+Faster development
+AI support	
+Modern applications
+Open source	
+Free to use
+
+# Identifiers in Python
+
+# Definition
+
+Identifiers are the **names used to identify variables, functions, classes, objects, or modules** in Python.
+
+In simple words:
+
+> Identifiers are names given to programming elements.
+
+---
+
+# Examples of Identifiers
+
+```python id="w5e5sp"
+name = "Rahul"
+age = 21
+
+def display():
+    print("Hello")
+```
+
+Here:
+
+* `name` → identifier
+* `age` → identifier
+* `display` → identifier
+
+---
+
+# Rules for Naming Identifiers
+
+## 1. Must Start with a Letter or Underscore
+
+✅ Correct
+
+```python id="g0u8rn"
+name = "Python"
+_age = 20
+```
+
+❌ Wrong
+
+```python id="8yzwmg"
+1name = "Python"
+```
+
+Python does not allow identifiers to start with numbers.
+
+---
+
+# 2. Cannot Contain Special Symbols
+
+❌ Invalid
+
+```python id="4tb9s3"
+student@name = "Ram"
+```
+
+Only:
+
+* Letters (`A-Z`, `a-z`)
+* Numbers (`0-9`)
+* Underscore (`_`)
+
+are allowed.
+
+---
+
+# 3. Spaces Are Not Allowed
+
+❌ Wrong
+
+```python id="i2g1bg"
+student name = "Raj"
+```
+
+✅ Correct
+
+```python id="g2m4ol"
+student_name = "Raj"
+```
+
+---
+
+# 4. Python Keywords Cannot Be Used
+
+Keywords already have predefined meanings.
+
+❌ Wrong
+
+```python id="ovjlwm"
+class = 10
+```
+
+Because `class` is a keyword.
+
+---
+
+# 5. Identifiers Are Case Sensitive
+
+Python treats uppercase and lowercase differently.
+
+```python id="x7u5ju"
+name = "Ram"
+Name = "Shyam"
+
+print(name)
+print(Name)
+```
+
+Both are different identifiers.
+
+---
+
+# Types of Identifiers
+
+| Type                | Example         |
+| ------------------- | --------------- |
+| Variable Identifier | `age`, `salary` |
+| Function Identifier | `display()`     |
+| Class Identifier    | `Student`       |
+| Module Identifier   | `math`          |
+
+---
+
+# Valid Identifier Examples
+
+✅ Valid
+
+```python id="tgg2n2"
+student
+student1
+_student
+student_name
+AGE
+```
+
+---
+
+# Invalid Identifier Examples
+
+❌ Invalid
+
+```python id="ifp7tq"
+1student
+student-name
+student name
+@value
+```
+
+---
+
+# Naming Conventions in Python
+
+## Variables and Functions
+
+Use lowercase with underscore.
+
+```python id="49ijoe"
+student_name
+calculate_total()
+```
+
+---
+
+## Classes
+
+Use PascalCase.
+
+```python id="jlwm64"
+class StudentDetails:
+    pass
+```
+
+---
+
+# Real-Time Example
+
+```python id="8iv6dh"
+student_name = "Anu"
+student_age = 20
+
+print(student_name)
+print(student_age)
+```
+
+Here:
+
+* `student_name` → identifier
+* `student_age` → identifier
+
+These identifiers help store and access data.
+
+---
+
+# Keywords vs Identifiers
+
+| Keywords                | Identifiers             |
+| ----------------------- | ----------------------- |
+| Reserved words          | User-defined names      |
+| Cannot be used as names | Created by programmer   |
+| Example: `if`, `while`  | Example: `age`, `marks` |
+
+---
+
+# Example Showing Error
+
+```python id="5g9k7g"
+if = 10
+```
+
+Output:
+
+```text id="g7pc7q"
+SyntaxError
+```
+
+Because `if` is a keyword.
+
+---
+
+# How to View Python Keywords
+
+```python id="2n4xxd"
+import keyword
+
+print(keyword.kwlist)
+```
+
+This displays all Python reserved keywords.
+
+---
+
+# Advantages of Good Identifiers
+
+Good identifiers:
+
+* Improve readability
+* Make debugging easier
+* Help understand the program quickly
+
+---
+
+# Bad vs Good Naming
+
+❌ Bad
+
+```python id="fhx9v2"
+a = 50000
+```
+
+✅ Good
+
+```python id="m2txaq"
+employee_salary = 50000
+```
+
+Good identifiers explain the purpose clearly.
+
+---
+
+# Simple Definition for Students
+
+> Identifiers are user-defined names used to identify variables, functions, classes, and other objects in Python.
+
+---
+
+# One-Line Conclusion
+
+> A good identifier makes Python programs easier to read, understand, and maintain.
+
+Five Rules for Naming Variables in Python
+
+Variable must start with a letter or underscore (_)
+✅ name, _age
+❌ 1name
+Variable cannot start with a number
+✅ student1
+❌ 123student
+Special symbols are not allowed except underscore (_)
+✅ student_name
+❌ student-name, student@name
+Spaces are not allowed in variable names
+✅ total_marks
+❌ total marks
+Python keywords cannot be used as variable names
+✅ amount = 100
+❌ class = 100
+
+Keywords 
+
+Definition
+
+Keywords are reserved words in Python that have special meanings.
+
+These words are already defined by Python and cannot be used as:
+
+Variable names
+Function names
+Class names
+
+Check how ?
+#import keyword
+
+#print(keyword.kwlist)
