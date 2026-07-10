@@ -1,0 +1,66 @@
+gamma
+
+Imagine a company opening branches.
+
+Current branch profit:
+
+10 Lakhs
+
+New branch expected profit:
+
+5000 Rupees
+
+Not worth opening.
+
+New branch expected profit:
+
+10 Lakhs
+
+Worth opening.
+
+Gamma asks:
+
+Is this split really useful?
+
+If improvement is tiny:
+
+Don't split
+
+Higher gamma:
+
+Less splitting
+Less overfitting
+5. reg_alpha (L1)
+
+Imagine a company spending money.
+
+Expenses:
+
+Office Rent
+Electricity
+Coffee Machine
+Fancy Decorations
+
+CEO removes unnecessary expenses.
+
+XGBoost removes unnecessary features.
+
+reg_alpha=0.4
+
+More strict.
+
+6. reg_lambda (L2)
+
+Imagine a car.
+
+Without brakes:
+
+100 km/hr
+200 km/hr
+300 km/hr
+
+Dangerous.
+
+Lambda acts like a speed governor.
+
+Controls excessive learning.
