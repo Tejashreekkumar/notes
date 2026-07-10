@@ -1,0 +1,142 @@
+
+UNDERSTANDING THE 'p' PARAMETER IN MINKOWSKI DISTANCE
+=====================================================
+
+What is p?
+----------
+The p in Minkowski Distance is called the order parameter or power parameter.
+
+It decides HOW distance should be measured.
+
+Think of p as a "rule selector".
+
+Minkowski Distance Formula
+--------------------------
+
+d = ( Σ |xi - yi|^p )^(1/p)
+
+The value of p changes the behavior of the distance calculation.
+
+Example
+-------
+
+Point A = (2, 3)
+Point B = (5, 7)
+
+Differences:
+|5 - 2| = 3
+|7 - 3| = 4
+
+Case 1: p = 1
+-------------
+
+d = (3^1 + 4^1)^(1/1)
+  = 3 + 4
+  = 7
+
+Result: Manhattan Distance
+
+Case 2: p = 2
+-------------
+
+d = (3^2 + 4^2)^(1/2)
+  = (9 + 16)^(1/2)
+  = sqrt(25)
+  = 5
+
+Result: Euclidean Distance
+
+Case 3: p = 3
+-------------
+
+d = (3^3 + 4^3)^(1/3)
+  = (27 + 64)^(1/3)
+  = 91^(1/3)
+  ≈ 4.5
+
+Result: Distance becomes smaller.
+
+What Happens as p Increases?
+----------------------------
+
+p = 1   -> Distance = 7
+p = 2   -> Distance = 5
+p = 3   -> Distance ≈ 4.5
+p = 10  -> Distance ≈ 4.02
+p → ∞   -> Distance = 4
+
+The distance approaches the largest difference among all dimensions.
+
+Largest difference here:
+max(3, 4) = 4
+
+Real-Life Example
+-----------------
+
+Suppose two students have marks:
+
+Math:
+Student A = 80
+Student B = 83
+Difference = 3
+
+Science:
+Student A = 75
+Student B = 79
+Difference = 4
+
+When p = 1:
+Treat all differences equally.
+
+When p = 2:
+Give more importance to larger differences.
+
+When p is very large:
+Focus mainly on the biggest difference.
+
+Why Machine Learning Uses p
+---------------------------
+
+p = 1:
+- Good for sparse data
+- Handles outliers better
+- Used in text mining and recommendation systems
+
+p = 2:
+- Most common choice
+- Suitable for continuous numerical data
+- Used in KNN, K-Means, clustering
+
+p > 2:
+- Emphasizes larger deviations
+- Useful in fraud detection and risk analysis
+
+Classroom Analogy
+-----------------
+
+Imagine a teacher checking mistakes.
+
+A student made:
+- 3 spelling mistakes
+- 4 grammar mistakes
+
+Teacher with p = 1:
+Counts every mistake equally.
+
+Teacher with p = 2:
+Gives more importance to bigger mistakes.
+
+Teacher with very large p:
+Focuses only on the category with the most mistakes.
+
+Memory Trick
+------------
+
+p = 1  -> Manhattan Distance (Road Distance)
+p = 2  -> Euclidean Distance (Straight-Line Distance)
+p → ∞  -> Chebyshev Distance (Largest Difference)
+
+One-Line Summary
+----------------
+
+The value of p controls how much importance is given to larger differences when calculating distance.
